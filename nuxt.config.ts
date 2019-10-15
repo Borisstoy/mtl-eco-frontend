@@ -61,6 +61,8 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
+        '@nuxtjs/axios',
+        '@nuxtjs/pwa',
         'nuxt-babel',
         'cookie-universal-nuxt'
     ],
