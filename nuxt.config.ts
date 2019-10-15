@@ -30,7 +30,7 @@ export default {
     },
 
     serverMiddleware: [
-        '~/server/api/index.ts'
+        { path: '/api', handler: '~/server/api/index.ts' }
     ],
 
     /*

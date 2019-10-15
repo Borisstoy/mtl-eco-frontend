@@ -31,7 +31,6 @@ module.exports = {
     ],
     // add your custom rules here
     rules: {
-        'mno-triple-slash-reference': false,
         'nuxt/no-cjs-in-config': 'off',
         '@typescript-eslint/camelcase': [1, { properties: 'never' }],
         '@typescript-eslint/explicit-function-return-type': 0,
