@@ -1,0 +1,8 @@
+.circleci
+.nuxt
+.vscode
+assets
+node_modules
+nuxt-build
+static
+test
