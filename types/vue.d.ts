@@ -1,5 +1,6 @@
 import CookieUniversalNuxt from 'cookie-universal-nuxt'
 import VueRouter, { Route } from 'vue-router'
+import config from '@/libs/config'
 import { ElLoadingComponent, LoadingServiceOptions } from 'element-ui/types/loading'
 
 declare module 'vue/types/vue' {
