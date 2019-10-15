@@ -35,7 +35,7 @@
     "esModuleInterop": true,
     "noEmit": true,
     "types": [
-      "googlemaps",
+    //   "googlemaps",
       "@types/node",
       "@nuxt/vue-app"
     ]

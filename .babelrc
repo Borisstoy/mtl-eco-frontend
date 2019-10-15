@@ -1,16 +1,10 @@
 {
-  "env": {
-    "test": {
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "targets": {
-              "node": "current"
-            }
-          }
-        ]
-      ]
-    }
-  }
+    "presets": [ "@babel/preset-env" ],
+    "plugins": [
+        "@babel/plugin-proposal-optional-chaining",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-transform-modules-commonjs",
+        "@babel/plugin-transform-runtime",
+        "dynamic-import-node"
+    ]
 }
