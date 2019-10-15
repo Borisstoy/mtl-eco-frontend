@@ -22,4 +22,5 @@ router.post('/authenticate', (req, res) => {
         })
         .then(resp => res.json(resp.data))
 })
+
 export default router

@@ -30,7 +30,7 @@ export default {
     },
 
     serverMiddleware: [
-        '~/server/api/index'
+        '~/server/api/index.ts'
     ],
 
     /*
