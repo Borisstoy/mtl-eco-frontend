@@ -14,7 +14,10 @@ declare module 'vue/types/vue' {
     }
 }
 
-
+/**
+ * Missing type fix
+ * Reference: https://stackoverflow.com/questions/49090240/nuxt-vue-js-in-typescript-object-literal-may-only-specify-known-properties-b
+ */
 import Vue, { ComponentOptions } from "vue";
 
 declare module "vue/types/options" {
