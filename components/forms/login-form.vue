@@ -26,13 +26,13 @@ export default class LoginForm extends Vue {
 
     @Mutation('setAuth') setAuth: (payload) => Promise<{}>
 
-    submit(rules) {
+    async submit(rules) {
         const data = {
             email: this.loginInput.email,
             password: this.loginInput.password
         }
 
-        axios
+        await axios
             .post('/api/authenticate', { data })
             .then((res) => {
                 this.setAuth(res.data.auth_token)
