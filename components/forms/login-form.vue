@@ -2,8 +2,6 @@
   .container
     div
         el-form(label-position="right" label-width="100px")
-            el-form-item(label="Name")
-                el-input(v-model="loginInput.name")
             el-form-item(label="Email")
                 el-input(v-model="loginInput.email")
             el-form-item(label="Password")

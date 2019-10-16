@@ -16,7 +16,8 @@ export const mutations = {
                 path: '/',
                 maxAge: 60 * 60 * 24 * 7
             })
-        } else {
+        }
+        else {
             state.auth = null
             this.$cookies.remove('accessToken')
         }
@@ -27,15 +28,9 @@ export const actions = {
     nuxtServerInit ({ commit }, { req }) {
         let token = ''
         if (req.headers.cookie) {
-            console.log('IN nuxtServerInit')
-            console.log(req.headers.cookie)
             const parsed = cookieparser.parse(req.headers.cookie)
-            console.log('PARSED')
-            console.log(parsed.accessToken)
             try {
                 token = JSON.stringify(parsed.accessToken)
-                console.log('token')
-                console.log(token)
             }
             catch (err) {
                 console.log(err)
