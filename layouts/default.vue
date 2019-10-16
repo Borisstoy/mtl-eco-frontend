@@ -9,7 +9,7 @@ import { Component, Vue } from "nuxt-property-decorator";
 
 @Component
 export default class Default extends Vue {
-    @Getter('auth') auth
+    @Getter('user/auth') auth
     @Mutation('user/setUser') setUser: (auth) => Promise<{}>
 
     mounted () {

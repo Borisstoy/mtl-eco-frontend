@@ -22,7 +22,7 @@ import { Component, Vue } from "nuxt-property-decorator";
 export default class LoginForm extends Vue {
     loginInput: Record<string, any> = {};
 
-    @Mutation('setAuth') setAuth: (payload) => Promise<{}>
+    @Mutation('user/setAuth') setAuth: (payload) => Promise<{}>
 
     async submit(rules) {
         const data = {

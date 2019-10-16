@@ -3,7 +3,7 @@
         el-row(v-if="auth")
             h2 You can access the secret
             h3 Your user:
-            span | {{ user }}
+            span | {{ userEmail }}
             nuxt-link(:to="{path: '/secret'}") Secret
         el-row(v-else)
             el-col(
@@ -21,8 +21,8 @@ import { Getter } from 'vuex-class'
 
 @Component
 export default class RouteLanding extends Vue {
-    @Getter('auth') auth
-    @Getter('user/user') user
+    @Getter('user/auth') auth
+    @Getter('user/userEmail') userEmail
 }
 </script>
 
