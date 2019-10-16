@@ -72,7 +72,10 @@ export default {
     ** Nuxt.js dev-modules
     */
     buildModules: [
-        '@nuxt/typescript-build'
+        ['@nuxt/typescript-build', {
+            typeCheck: true,
+            ignoreNotFoundWarnings: true
+        }]
     ],
     /*
     ** Nuxt.js modules
