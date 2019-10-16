@@ -14,6 +14,7 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import { Mutation } from 'vuex-class'
 import logoutButton from "~/components/buttons/logout-button.vue"
+
 @Component({
     middleware: 'authenticated',
     components: {

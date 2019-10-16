@@ -7,11 +7,11 @@ export const actions = {
             const parsed = cookieparser.parse(req.headers.cookie)
             try {
                 token = JSON.stringify(parsed.accessToken)
+                commit('user/setAuth', token)
             }
             catch (err) {
                 console.log(err)
             }
         }
-        commit('user/setAuth', token)
     }
 }

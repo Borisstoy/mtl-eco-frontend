@@ -31,14 +31,20 @@ module.exports = {
     ],
     // add your custom rules here
     rules: {
+        "sort-imports": ["error", {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": false,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+        }],
         'nuxt/no-cjs-in-config': 'off',
         '@typescript-eslint/camelcase': [1, { properties: 'never' }],
         '@typescript-eslint/explicit-function-return-type': 0,
         '@typescript-eslint/interface-name-prefix': [2, 'always'],
         '@typescript-eslint/member-delimiter-style': [2, { multiline: { delimiter: 'none' }}],
         '@typescript-eslint/explicit-member-accessibility': 0,
+        // '@typescript-eslint/no-triple-slash-reference': 2,
         '@typescript-eslint/no-explicit-any': 1,
-        '@typescript-eslint/no-triple-slash-reference': 2,
         '@typescript-eslint/no-non-null-assertion': 0,
         "@typescript-eslint/no-var-requires": 0,
         'arrow-parens': [2, 'as-needed'],
