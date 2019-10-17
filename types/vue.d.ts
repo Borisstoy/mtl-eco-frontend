@@ -10,9 +10,6 @@ declare module 'vue/types/vue' {
         $config: typeof config
         CookieUniversalNuxt: typeof CookieUniversalNuxt
         window: typeof window
-        // This is a conflict betweeb Element plugin and Nuxt types. No time to fix this.
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        // Issue listed here: https://github.com/ElemeFE/element/issues/17630
     }
 }
 
@@ -22,7 +19,7 @@ declare module 'vue/types/options' {
         // Missing type fix
         // Reference: https://stackoverflow.com/questions/49090240/nuxt-vue-js-in-typescript-object-literal-may-only-specify-known-properties-b
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // Had to disable the following: '@typescript-eslint/interface-name-prefix': [2, 'never'],
         middleware?: string | string[] | any
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     }
 }

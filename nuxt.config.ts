@@ -89,7 +89,7 @@ export default {
     ** Build configuration
     */
     build: {
-        transpile: [/^element-ui/]
+        transpile: ['vuetify/lib']
         /*
         ** You can extend webpack config here
         */

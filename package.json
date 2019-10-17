@@ -9,10 +9,14 @@
         "build": "nuxt-ts build",
         "start": "nuxt-ts start",
         "generate": "nuxt-ts generate",
-        "heroku-postbuild": "npm run build",
+        "heroku-postbuild": "yarn run build",
         "test": "jest",
         "lint": "eslint --ext .ts,.js,.vue .gitignore .",
         "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+    },
+    "engines": {
+        "node": ">=12.7.0",
+        "yarn": ">=1.17.3"
     },
     "dependencies": {
         "@nuxt/typescript-runtime": "^0.2.1",
