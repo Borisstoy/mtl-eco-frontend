@@ -59,14 +59,13 @@ export default {
     ** Global CSS
     */
     css: [
-        'element-ui/lib/theme-chalk/index.css',
         '@/assets/app.sass'
     ],
     /*
     ** Plugins to load before mounting the App
     */
     plugins: [
-        '@/plugins/element-ui'
+        '@plugins/vuetify'
     ],
     /*
     ** Nuxt.js dev-modules

@@ -1,5 +1,5 @@
 <template lang="pug">
-    el-button(
+    v-btn(
         type="danger"
         @click="logout()"
     ) Logout

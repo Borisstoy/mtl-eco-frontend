@@ -1,16 +1,13 @@
 <template lang="pug">
-    el-container(direction="vertical")
-        el-row(v-if="auth")
-            h2 You can access the secret
-            h3 Your user:
-            span | {{ userEmail }}
-            nuxt-link(:to="{path: '/secret'}") Secret
-        el-row(v-else)
-            el-col(
-                :xs="{span: 24, offset: 0}"
-                :sm="{span: 16, offset: 4}"
-                :md="{span: 16, offset: 4}"
-            )
+    .container
+        .row(v-if="auth")
+            .col-md-6.col-xs-12.offset-md-3
+                h2 You can access the secret
+                h3 Your user:
+                span | {{ userEmail }}
+                nuxt-link(:to="{path: '/secret'}") Secret
+        .row(v-else)
+            .col-md-6.col-xs-12.offset-md-3
                 h1 You need to login
                 nuxt-link(:to="{path: '/login'}") Login
 </template>

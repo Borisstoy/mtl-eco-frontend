@@ -1,16 +1,20 @@
 <template lang="pug">
-  .container
-    div
-        el-form(label-position="right" label-width="100px")
-            el-form-item(label="Email")
-                el-input(v-model="loginInput.email")
-            el-form-item(label="Password")
-                el-input(v-model="loginInput.password")
-            el-form-item
-                el-button(
-                    type="primary"
-                    @click="submit('inputs')"
-                ) Submit
+    v-form
+        v-text-field(
+            v-model="loginInput.email"
+            label="Email"
+            required
+        )
+        v-text-field(
+            v-model="loginInput.password"
+            label="Password"
+            required
+        )
+        v-btn(
+            primary
+            depressed
+            @click="submit()"
+        ) Submit
 </template>
 
 <script lang="ts">
@@ -24,7 +28,7 @@ export default class LoginForm extends Vue {
 
     @Mutation('user/setAuth') setAuth: (payload) => Promise<{}>
 
-    async submit(rules) {
+    async submit() {
         const data = {
             email: this.loginInput.email,
             password: this.loginInput.password

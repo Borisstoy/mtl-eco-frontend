@@ -1,19 +1,8 @@
 <template lang="pug">
-    el-container(direction="vertical")
-        el-row
-            el-col(
-                :xs="{span: 24, offset: 0}"
-                :sm="{span: 16, offset: 4}"
-                :md="{span: 16, offset: 4}"
-            )
-
-                el-row(type="flex")
-                    el-col(
-                        :xs="{span: 24, offset: 0}"
-                        :sm="{span: 16, offset: 4}"
-                        :md="{span: 16, offset: 4}"
-                    )
-                        login-form
+    .container
+        .row.align-center
+            .col-md-6.col-xs-12.offset-md-3
+                login-form
 </template>
 
 <script lang="ts">

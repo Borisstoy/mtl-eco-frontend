@@ -1,11 +1,7 @@
 <template lang="pug">
-    el-container(direction="vertical")
-        el-row
-            el-col(
-                :xs="{span: 24, offset: 0}"
-                :sm="{span: 16, offset: 4}"
-                :md="{span: 16, offset: 4}"
-            )
+    .container
+        .row
+            .col-md-6.col-xs-12.offset-md-3
                 h1 On the secret page
                 logout-button
 </template>
