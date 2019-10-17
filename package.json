@@ -15,8 +15,7 @@
         "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
     },
     "dependencies": {
-        "@nuxt/types": "git@github.com:Borisstoy/typescript/tree/master/packages/types",
-        "@nuxt/typescript-runtime": "git@github.com:nuxt/typescript/tree/master/packages/typescript-runtime",
+        "@nuxt/typescript-runtime": "^0.2.1",
         "@nuxtjs/axios": "^5.6.0",
         "@nuxtjs/dotenv": "^1.4.1",
         "@nuxtjs/pwa": "^3.0.0-beta.19",
@@ -42,7 +41,7 @@
         "@babel/plugin-transform-runtime": "^7.6.2",
         "@babel/preset-typescript": "^7.6.0",
         "@mdi/font": "^4.5.95",
-        "@nuxt/typescript-build": "git@github.com:nuxt/typescript/tree/master/packages/typescript-build",
+        "@nuxt/typescript-build": "^0.3.1",
         "@nuxtjs/eslint-config": "^1.1.2",
         "@nuxtjs/eslint-config-typescript": "^0.1.3",
         "@typescript-eslint/eslint-plugin": "^2.4.0",

@@ -1054,7 +1054,7 @@
     serve-static "^1.14.1"
     server-destroy "^1.0.1"
 
-"@nuxt/types@0.3.1", "@nuxt/types@git@github.com:Borisstoy/typescript/tree/master/packages/types":
+"@nuxt/types@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.3.1.tgz#b6e133a57f740032743206861e51f762bcbbe89b"
   integrity sha512-Ee8vRb6+OU+GttbYiHlvSa9UbOMvHdTIZw6XYbFidUYhSbyWbEtP6iOjql4OPntcSNufM4S2WyDvXKErvh/SEA==
@@ -1074,7 +1074,7 @@
     "@types/webpack-dev-middleware" "^2.0.3"
     "@types/webpack-hot-middleware" "^2.16.5"
 
-"@nuxt/typescript-build@git@github.com:nuxt/typescript/tree/master/packages/typescript-build":
+"@nuxt/typescript-build@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-0.3.1.tgz#b61d826d3a86e57171e88b392a4e5951eb918c81"
   integrity sha512-58rFXD0gYUwrdSeuXD8Ewx6eOZzqBrGNb7hqVbxJxLBtFws/WTjdn3+PM3K75wLD6FfNnQkKQeeN6N4q6TwIMA==
@@ -1085,7 +1085,7 @@
     ts-loader "^6.2.0"
     typescript "~3.6"
 
-"@nuxt/typescript-runtime@git@github.com:nuxt/typescript/tree/master/packages/typescript-runtime":
+"@nuxt/typescript-runtime@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-0.2.1.tgz#b122ab8203cf2c9b735ea95ce909408526c2e4de"
   integrity sha512-h8dPRRHQC8HEXBmKFUqn+baBmQtAKndu7Pdr2jbCVo3IIFdyyXk5QP0peYHCU8cRu09+N8ACmfdEoah4NqEXNQ==
