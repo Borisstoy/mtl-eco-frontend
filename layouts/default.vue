@@ -5,14 +5,15 @@
 
 <script lang="ts">
 import { Getter, Mutation } from 'vuex-class'
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Vue, Watch } from "nuxt-property-decorator";
 
 @Component
 export default class Default extends Vue {
     @Getter('user/auth') auth
     @Mutation('user/setUser') setUser: (auth) => Promise<{}>
 
-    mounted () {
+    @Watch('auth')
+    watchAuth() {
         if (this.auth) {
             this.setUser(this.auth)
         }
