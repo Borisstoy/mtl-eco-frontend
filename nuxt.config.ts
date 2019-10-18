@@ -1,3 +1,5 @@
+const colors = require('vuetify/es5/util/colors').default
+
 export default {
     mode: 'universal',
 
@@ -58,21 +60,23 @@ export default {
     css: [
         '@/assets/app.sass'
     ],
+
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [
-        '@plugins/vuetify'
-    ],
+    plugins: [],
+
     /*
     ** Nuxt.js dev-modules
     */
     buildModules: [
+        '@nuxtjs/vuetify',
         ['@nuxt/typescript-build', {
             typeCheck: true,
             ignoreNotFoundWarnings: true
         }]
     ],
+
     /*
     ** Nuxt.js modules
     */
@@ -83,10 +87,30 @@ export default {
         'cookie-universal-nuxt'
     ],
     /*
+    ** vuetify module configuration
+    ** https://github.com/nuxt-community/vuetify-module
+    */
+    vuetify: {
+        // customVariables: ['~/assets/variables.scss'],
+        theme: {
+            dark: false,
+            themes: {
+                dark: {
+                    primary: colors.blue.darken2,
+                    accent: colors.grey.darken3,
+                    secondary: colors.amber.darken3,
+                    info: colors.teal.lighten1,
+                    warning: colors.amber.base,
+                    error: colors.deepOrange.accent4,
+                    success: colors.green.accent3
+                }
+            }
+        }
+    },
+    /*
     ** Build configuration
     */
     build: {
-        transpile: ['vuetify/lib']
         /*
         ** You can extend webpack config here
         */

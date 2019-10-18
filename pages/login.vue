@@ -11,12 +11,16 @@ import LoginForm from "~/components/forms/login-form.vue";
 import axios from "axios";
 
 @Component({
-    middleware: 'notAuthenticated',
     components: {
         LoginForm
     },
+    // middleware: ['notAuthenticated']
 })
 export default class Login extends Vue {
+
+    middleware () {
+        return 'notAuthenticated'
+    }
 }
 </script>
 

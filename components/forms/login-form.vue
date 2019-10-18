@@ -1,12 +1,12 @@
 <template lang="pug">
     v-form
         v-text-field(
-            v-model="loginInput.email"
+            v-model="loginInputs.email"
             label="Email"
             required
         )
         v-text-field(
-            v-model="loginInput.password"
+            v-model="loginInputs.password"
             label="Password"
             required
         )
@@ -24,19 +24,21 @@ import { Component, Vue } from "nuxt-property-decorator";
 
 @Component
 export default class LoginForm extends Vue {
-    loginInput: Record<string, any> = {};
+    loginInputs: Record<string, any> = {};
 
     @Mutation('user/setAuth') setAuth: (payload) => Promise<{}>
 
     async submit() {
         const data = {
-            email: this.loginInput.email,
-            password: this.loginInput.password
+            email: this.loginInputs.email,
+            password: this.loginInputs.password
         }
 
         await axios
             .post('/api/authenticate', { data })
             .then((res) => {
+                console.log('in the call')
+                console.log(res.data.auth_token)
                 this.setAuth(res.data.auth_token)
                 this.$router.push('/')
             })

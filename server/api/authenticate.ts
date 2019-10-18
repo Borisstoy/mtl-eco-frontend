@@ -1,5 +1,5 @@
-import axios from 'axios'
 import { Router } from 'express'
+import axios from 'axios'
 import config from '../../libs/config'
 
 const router = Router()
