@@ -35,8 +35,6 @@ export default class CreatePlaceForm extends Vue {
             auth: this.auth.accessToken
         }
 
-        console.log(data)
-
         await axios
             .post('/api/create-place', { data })
             .then((res) => {
