@@ -19,13 +19,9 @@ import createPlaceForm from '~/components/forms/create-place-form.vue'
         logoutButton,
         createPlaceForm
     },
-    // middleware: ['authenticated']
+    middleware: 'authenticated'
 })
-export default class RouteSecret extends Vue {
-    middleware () {
-        return 'authenticated'
-    }
-}
+export default class RouteSecret extends Vue {}
 </script>
 
 <style>
