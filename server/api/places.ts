@@ -8,7 +8,7 @@ const BASE_URL = config.apiBaseUrl
 /**
  * Create a new placee
  */
-router.post('/create-places', (req, res) => {
+router.post('/create-place', (req, res) => {
     const {
         name,
         description,

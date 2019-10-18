@@ -37,8 +37,6 @@ export default class LoginForm extends Vue {
         await axios
             .post('/api/authenticate', { data })
             .then((res) => {
-                console.log('in the call')
-                console.log(res.data.auth_token)
                 this.setAuth(res.data.auth_token)
                 this.$router.push('/')
             })

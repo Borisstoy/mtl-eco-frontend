@@ -7,7 +7,7 @@
                 .row
                     nuxt-link(:to="{path: '/place'}")
                         v-btn(
-                            nuxt=true
+                            color="primary"
                         ) Create a place
 
         .row(v-else)
