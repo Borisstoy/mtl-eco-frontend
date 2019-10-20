@@ -2,6 +2,10 @@
     .container
         .row(v-if="places")
             .col-md-10.col-xs-12.offset-md-1
+                .row.mb-4.pb-4
+                    .d-flex.flex-column
+                        h1 Bulk shops in Montreal
+                        p.subtitle Find bulk shops, no packaging, bring your own.
                 .row
                     .col-md-3.pa-1(v-for="place in places")
                         v-card(

@@ -1,5 +1,9 @@
 <template lang="pug">
-    v-form
+    v-form(
+        ref="form"
+        v-model="valid"
+        lazy-validation
+    )
         v-text-field(
             v-model="placeInputs.name"
             label="Name"
@@ -31,17 +35,19 @@ export default class CreatePlaceForm extends Vue {
     @Getter('user/auth') auth
 
     async submit() {
-        const data = {
-            name: this.placeInputs.name,
-            description: this.placeInputs.description,
-            auth: this.auth.accessToken
-        }
+        if (this.$refs.form.validate()) {
+            const data = {
+                name: this.placeInputs.name,
+                description: this.placeInputs.description,
+                auth: this.auth.accessToken
+            }
 
-        await axios
-            .post('/api/create-place', { data })
-            .then((res) => {
-                console.log(res)
-            })
+            await axios
+                .post('/api/create-place', { data })
+                .then((res) => {
+                    console.log(res)
+                })
+        }
     }
 }
 </script>

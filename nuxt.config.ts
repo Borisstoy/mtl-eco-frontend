@@ -70,7 +70,8 @@ export default {
     */
     plugins: [
         '@/plugins/vuetify',
-        '@/plugins/truncate'
+        '@/plugins/truncate',
+        '@/plugins/validations'
     ],
 
     /*

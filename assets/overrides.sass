@@ -5,8 +5,10 @@
     letter-spacing: initial
 
 .v-card
-    box-shadow: $box-shadow
+    box-shadow: $light-grey-box-shadow
     border-radius: 2px
 
 .v-input__slot
-    box-shadow: $box-shadow
+    box-shadow: $light-grey-box-shadow
+    &:focus-within
+        border: 1px solid darken(#eaeaea, 5%)
