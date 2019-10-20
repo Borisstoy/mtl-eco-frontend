@@ -7,9 +7,14 @@
                         v-card(
                             :key="place.id"
                         )
-                            v-card-title {{ place.name }}
+                            v-img(
+                                class="white--text align-end"
+                                height="200px"
+                                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                            )
+                                v-card-title.img-title {{ place.name }}
                             v-card-subtitle {{ place.address }}
-                            v-card-text.px-4 {{ place.description }}
+                            v-card-text.px-4 {{ place.description | ellipsis(70) }}
 </template>
 
 <script lang="ts">
@@ -27,5 +32,8 @@ export default class RouteLanding extends Vue {
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
+.img-title
+    background: rgba(53, 73, 94, .5)
+    font-size: 18px
 </style>

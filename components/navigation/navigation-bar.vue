@@ -2,7 +2,7 @@
     .toolbar
         .container.pa-0
             .row
-                .col-md-10.col-xs-12.offset-md-1
+                .col-md-10.col-xs-12.offset-md-1.px-4
                     .d-flex.justify-space-between
                         .d-flex.align-center
                             nuxt-link(:to="{path: '/'}") Home
@@ -22,7 +22,7 @@
                                 :nuxt="true"
                                 to="login"
                             ) Login
-                            logout-button(v-if="auth")
+                            logout-button.ml-md-3(v-if="auth")
 </template>
 
 <script lang="ts">

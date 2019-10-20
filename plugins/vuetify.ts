@@ -1,7 +1,7 @@
 import 'vuetify/dist/vuetify.min.css'
 import LRU from 'lru-cache'
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify/lib'
 
 Vue.use(Vuetify)
 
@@ -17,8 +17,8 @@ const opts = {
         },
         themes: {
             light: {
-                primary: '#000',
-                secondary: '#b0bec5',
+                primary: '#347474',
+                secondary: '#35495e',
                 succes: '#42b883',
                 accent: '#8c9eff',
                 error: '#b71c1c'

@@ -3,15 +3,17 @@
         v-text-field(
             v-model="loginInputs.email"
             label="Email"
+            solo
             required
         )
         v-text-field(
             v-model="loginInputs.password"
             label="Password"
+            solo
             required
         )
         v-btn(
-            primary
+            color="primary"
             depressed
             @click="submit()"
         ) Submit

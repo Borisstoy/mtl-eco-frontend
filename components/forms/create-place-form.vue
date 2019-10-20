@@ -3,15 +3,17 @@
         v-text-field(
             v-model="placeInputs.name"
             label="Name"
+            solo
             required
         )
         v-text-field(
             v-model="placeInputs.description"
             label="Description"
+            solo
             required
         )
         v-btn(
-            primary
+            color="primary"
             depressed
             @click="submit()"
         ) Submit
