@@ -1,7 +1,7 @@
 <template lang="pug">
     v-btn(
-        type="danger"
         @click="logout()"
+        text
     ) Logout
 </template>
 

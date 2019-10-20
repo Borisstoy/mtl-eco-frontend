@@ -1,13 +1,19 @@
 <template lang="pug">
-    div
+    v-app
+        navigation-bar
         nuxt
 </template>
 
 <script lang="ts">
 import { Getter, Mutation } from 'vuex-class'
-import { Component, Vue, Watch } from "nuxt-property-decorator";
+import { Component, Vue, Watch } from "nuxt-property-decorator"
+import navigationBar from '~/components/navigation/navigation-bar.vue'
 
-@Component
+@Component({
+    components: {
+        navigationBar
+    }
+})
 export default class Default extends Vue {
     @Getter('user/auth') auth
     @Mutation('user/setUser') setUser: (auth) => Promise<{}>
@@ -21,5 +27,7 @@ export default class Default extends Vue {
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
+#app
+    backgroud: $main-bg
 </style>

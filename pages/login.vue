@@ -1,6 +1,6 @@
 <template lang="pug">
     .container
-        .row.align-center
+        .row
             .col-md-6.col-xs-12.offset-md-3
                 login-form
 </template>
@@ -19,5 +19,5 @@ import axios from "axios";
 export default class Login extends Vue {}
 </script>
 
-<style>
+<style lang="sass" scoped>
 </style>

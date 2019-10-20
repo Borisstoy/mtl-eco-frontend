@@ -3,21 +3,16 @@
         .row
             .col-md-6.col-xs-12.offset-md-3
                 .row
-                    h1 Create a place
-                create-place-form
+                    h1 User profile
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
-import createPlaceForm from '~/components/forms/create-place-form.vue'
 
 @Component({
-    components: {
-        createPlaceForm
-    },
     middleware: 'authenticated'
 })
-export default class RouteSecret extends Vue {}
+export default class Profile extends Vue {}
 </script>
 
 <style>
