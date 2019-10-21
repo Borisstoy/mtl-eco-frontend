@@ -31,11 +31,12 @@ import { Component, Vue } from "nuxt-property-decorator"
 @Component
 export default class CreatePlaceForm extends Vue {
     placeInputs: Record<string, any> = {};
+    valid: boolean = true
 
     @Getter('user/auth') auth
 
     async submit() {
-        if (this.$refs.form.validate()) {
+        if ((this.$refs.form as Element | any).validate()) {
             const data = {
                 name: this.placeInputs.name,
                 description: this.placeInputs.description,
