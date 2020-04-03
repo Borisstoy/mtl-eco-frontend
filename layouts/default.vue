@@ -29,5 +29,5 @@ export default class Default extends Vue {
 
 <style lang="sass" scoped>
 #app
-    backgroud: $main-bg
+    background: $white!important
 </style>

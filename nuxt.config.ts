@@ -28,7 +28,7 @@ export default {
             {
                 rel: 'stylesheet',
                 href:
-                    'https://fonts.googleapis.com/css?family=Overpass:300,400,700,900&display=swap'
+                    'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&family=Montserrat:wght@400;700;900'
             }
         ]
     },

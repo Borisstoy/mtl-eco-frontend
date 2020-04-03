@@ -4,7 +4,12 @@ export const actions = {
         if (req.headers.cookie) {
             const parsed = this.$cookies.nodeCookie.parse(req.headers.cookie)
             // Clean token: replace single by double quotes, stringify it ready to be parsed
+            if (!parsed.accessToken) {
+                return
+            }
+
             const cleaned = JSON.stringify(parsed.accessToken.replace(/'/g, '"'))
+
             try {
                 token = JSON.parse(cleaned)
                 commit('user/setAuth', token)
@@ -12,6 +17,7 @@ export const actions = {
             catch (err) {
                 console.log(err)
             }
+
         }
     }
 }

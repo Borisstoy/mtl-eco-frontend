@@ -1,0 +1,483 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200403.120316.2293.0.001.json",
+    "dumpEventTime": "2020-04-03T12:03:16Z",
+    "dumpEventTimeStamp": "1585929796143",
+    "processId": 2293,
+    "cwd": "/mnt/c/Users/boris/projects/mtl-eco-frontend",
+    "commandLine": [
+      "/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node",
+      "/mnt/c/Users/boris/projects/mtl-eco-frontend/node_modules/.bin/nuxt-ts",
+      "dev",
+      "-o",
+      "--port",
+      "8080"
+    ],
+    "nodejsVersion": "v12.7.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.7.0",
+      "v8": "7.5.288.22-node.16",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.1",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.7.0/node-v12.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.7.0/node-v12.7.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-18362-Microsoft",
+    "osVersion": "#476-Microsoft Fri Nov 01 16:53:00 PST 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 14632300,
+        "nice": 0,
+        "sys": 12466000,
+        "idle": 91392000,
+        "irq": 3748700
+      }
+    ],
+    "host": "DESKTOP-1BODI1M"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000ad0835",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x00000000009b10d3",
+      "symbol": "node::OnFatalError(char const*, char const*) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b09f1e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b0a299",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce71a5",
+      "symbol": " [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf29eb",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf3707",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf6238",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cbfb47",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f96708",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000001318979",
+      "symbol": " [/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2184896512,
+    "totalCommittedMemory": 2180523096,
+    "usedMemory": 2084236880,
+    "availableMemory": 44198528,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32272,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 30092368,
+        "capacity": 16757248,
+        "used": 2728192,
+        "available": 14029056
+      },
+      "old_space": {
+        "memorySize": 1771450368,
+        "committedMemory": 1771138520,
+        "capacity": 1713894888,
+        "used": 1713631320,
+        "available": 263568
+      },
+      "code_space": {
+        "memorySize": 7766016,
+        "committedMemory": 7490720,
+        "capacity": 6135776,
+        "used": 6135776,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 29102080,
+        "committedMemory": 29007744,
+        "capacity": 19512000,
+        "used": 19512000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 341852160,
+        "committedMemory": 341852160,
+        "capacity": 341375808,
+        "used": 341375808,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 909312,
+        "committedMemory": 909312,
+        "capacity": 821824,
+        "used": 821824,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16757248,
+        "used": 0,
+        "available": 16757248
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 485.234,
+    "kernelCpuSeconds": 60.875,
+    "cpuConsumptionPercent": 53.9101,
+    "maxRss": 2258362368,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 3720297
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 255.094,
+    "kernelCpuSeconds": 39.7031,
+    "cpuConsumptionPercent": 29.1014,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_package_devDependencies_nuxt_babel": "^1.0.1",
+    "npm_package_devDependencies__mdi_font": "^4.5.95",
+    "npm_package_dependencies_nuxt_property_decorator": "^2.4.1",
+    "npm_package_dependencies__nuxtjs_style_resources": "^1.0.0",
+    "npm_package_devDependencies_pug_plain_loader": "^1.0.0",
+    "npm_package_devDependencies__nuxt_typescript_build": "^0.3.1",
+    "USER": "boris",
+    "npm_package_devDependencies_jest": "^24.1.0",
+    "npm_package_devDependencies_eslint_plugin_standard": "^4.0.1",
+    "npm_package_dependencies_node_sass": "^4.12.0",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v12.7.0 linux x64",
+    "npm_config_bin_links": "true",
+    "SSH_AGENT_PID": "33",
+    "npm_node_execpath": "/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node",
+    "npm_package_devDependencies_vue_jest": "^4.0.0-0",
+    "npm_package_devDependencies_nodemon": "^1.18.9",
+    "npm_package_devDependencies_eslint_plugin_node": "^10.0.0",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "4",
+    "HOME": "/home/boris",
+    "OLDPWD": "/mnt/c/Users/boris",
+    "LESS": "-R",
+    "npm_package_devDependencies_eslint_plugin_nuxt": "^0.4.3",
+    "npm_package_devDependencies__typescript_eslint_parser": "^2.4.0",
+    "NVM_BIN": "/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin",
+    "npm_package_devDependencies__babel_plugin_syntax_dynamic_import": "^7.2.0",
+    "ZSH": "/home/boris/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "npm_package_engines_node": ">=12.7.0",
+    "npm_config_init_license": "MIT",
+    "PAGER": "less",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_package_devDependencies__nuxtjs_vuetify": "^1.0.0",
+    "npm_config_version_tag_prefix": "v",
+    "npm_package_dependencies_vuex_class": "^0.3.2",
+    "npm_package_dependencies_dotenv": "^8.1.0",
+    "npm_package_dependencies__nuxtjs_pwa": "^3.0.0-beta.19",
+    "WSL_DISTRO_NAME": "Ubuntu",
+    "npm_package_description": "My superb Nuxt.js project",
+    "NVM_DIR": "/mnt/c/Users/boris/.nvm",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_devDependencies_pug": "^2.0.4",
+    "npm_package_dependencies_nuxt": "^2.0.0",
+    "npm_package_devDependencies_ts_loader": "^6.2.0",
+    "npm_package_devDependencies_nuxt_class_component": "^1.3.0",
+    "npm_package_devDependencies_babel_jest": "^24.1.0",
+    "npm_package_devDependencies__babel_plugin_transform_runtime": "^7.6.2",
+    "npm_package_scripts_dev": "nuxt-ts dev -o --port 8080",
+    "LOGNAME": "boris",
+    "npm_package_devDependencies__babel_preset_typescript": "^7.6.0",
+    "_": "/usr/bin/yarn",
+    "NAME": "DESKTOP-1BODI1M",
+    "npm_package_devDependencies_eslint_config_standard": "^14.1.0",
+    "npm_package_dependencies_sass_loader": "^8.0.0",
+    "npm_package_dependencies_express": "^4.16.4",
+    "npm_package_private": "true",
+    "npm_package_devDependencies__typescript_eslint_eslint_plugin": "^2.4.0",
+    "npm_package_scripts_lint": "eslint --ext .ts,.js,.vue .gitignore .",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "TERM": "xterm-256color",
+    "npm_package_devDependencies__babel_core": "^7.6.4",
+    "npm_package_dependencies_cookieparser": "^0.1.0",
+    "RBENV_SHELL": "zsh",
+    "npm_package_dependencies_lodash_truncate": "^4.4.2",
+    "npm_package_scripts_start": "nuxt-ts start",
+    "npm_config_ignore_scripts": "",
+    "npm_package_devDependencies_eslint_plugin_jest": "^22.19.0",
+    "npm_package_dependencies_css_loader": "^3.2.0",
+    "npm_package_dependencies_axios": "^0.19.0",
+    "PATH": "/tmp/yarn--1585928782938-0.8390033574715949:/mnt/c/Users/boris/projects/mtl-eco-frontend/node_modules/.bin:/home/boris/.config/yarn/link/node_modules/.bin:/home/boris/.yarn/bin:/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/lib/node_modules/npm/bin/node-gyp-bin:/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node_modules/npm/bin/node-gyp-bin:/home/boris/.rbenv/plugins/ruby-build/bin:/home/boris/.rbenv/shims:/home/boris/.rbenv/bin:/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/boris/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/boris/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/boris/AppData/Local/hyper/app-3.0.2/resources/bin:/mnt/c/Users/boris/AppData/Local/Yarn/bin:/mnt/c/Users/boris/AppData/Roaming/npm:/mnt/c/Program Files/heroku/bin:/home/boris/.local/bin",
+    "NODE": "/mnt/c/Users/boris/.nvm/versions/node/v12.7.0/bin/node",
+    "npm_package_devDependencies__nuxtjs_eslint_config_typescript": "^0.1.3",
+    "npm_package_dependencies_cross_env": "^5.2.0",
+    "npm_package_name": "front-end",
+    "LANG": "C.UTF-8",
+    "npm_package_devDependencies_eslint": "^6.5.1",
+    "npm_package_devDependencies__vue_test_utils": "^1.0.0-beta.27",
+    "npm_package_devDependencies__nuxtjs_eslint_config": "^1.1.2",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "npm_lifecycle_script": "nuxt-ts dev -o --port 8080",
+    "npm_package_dependencies_ts_node": "^8.4.1",
+    "SSH_AUTH_SOCK": "/tmp/ssh-MHZf7r4GwxTp/agent.31",
+    "npm_package_scripts_test": "jest",
+    "npm_config_version_git_message": "v%s",
+    "SHELL": "/bin/bash",
+    "npm_lifecycle_event": "dev",
+    "npm_package_dependencies__nuxtjs_dotenv": "^1.4.1",
+    "npm_package_version": "1.0.0",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
+    "npm_package_dependencies_cookie_universal_nuxt": "^2.0.18",
+    "npm_package_engines_yarn": ">=1.17.3",
+    "npm_package_scripts_build": "nuxt-ts build",
+    "DOCKER_HOST": "localhost:2375",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "npm_package_scripts_generate": "nuxt-ts generate",
+    "npm_config_strict_ssl": "true",
+    "npm_package_devDependencies__babel_plugin_transform_modules_commonjs": "^7.6.0",
+    "npm_package_scripts_lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "PWD": "/mnt/c/Users/boris/projects/mtl-eco-frontend",
+    "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+    "NVM_CD_FLAGS": "-q",
+    "npm_package_author_name": "Boris Stoyanov-Brignoli",
+    "npm_package_devDependencies_eslint_plugin_vue": "^5.2.3",
+    "npm_package_devDependencies__babel_plugin_proposal_optional_chaining": "^7.6.0",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "npm_package_dependencies__nuxtjs_axios": "^5.6.0",
+    "npm_package_dependencies__nuxt_typescript_runtime": "^0.2.1",
+    "HOSTTYPE": "x86_64",
+    "npm_package_devDependencies_eslint_plugin_promise": "^4.2.1",
+    "INIT_CWD": "/mnt/c/Users/boris/projects/mtl-eco-frontend",
+    "WSLENV": "",
+    "NODE_ENV": "development",
+    "_AXIOS_BASE_URL_": "http://localhost:8080/",
+    "VUE_ENV": "server"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 8388608
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7823,
+      "hard": 7823
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2",
+    "/mnt/c/Users/boris/projects/mtl-eco-frontend/node_modules/fibers/bin/linux-x64-72-glibc/fibers.node",
+    "/lib/x86_64-linux-gnu/libnss_dns.so.2",
+    "/lib/x86_64-linux-gnu/libresolv.so.2"
+  ]
+}

@@ -1,5 +1,5 @@
 <template lang="pug">
-    .container
+    .container.py-5.my-5
         .row(v-if="places")
             .col-md-10.col-xs-12.offset-md-1
                 .row.mb-4.pb-4
