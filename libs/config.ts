@@ -1,5 +1,5 @@
 const config = {
-  apiBaseUrl: 'http://localhost:3000'
+  apiBaseUrl: 'https://mtl-eco-backend-staging.herokuapp.com'
 }
 
 switch (process.env.NODE_END) {
