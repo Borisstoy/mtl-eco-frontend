@@ -71,7 +71,8 @@ export default {
     plugins: [
         '@/plugins/vuetify',
         '@/plugins/truncate',
-        '@/plugins/validations'
+        '@/plugins/validations',
+        '@/plugins/google-map'
     ],
 
     /*
@@ -100,7 +101,10 @@ export default {
     ** Build configuration
     */
     build: {
-        transpile: ['vuetify/lib']
+        transpile: [
+            'vuetify/lib',
+            'vue2-google-maps'
+        ]
         /*
         ** You can extend webpack config here
         */

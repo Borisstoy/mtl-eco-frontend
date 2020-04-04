@@ -6,7 +6,7 @@ const router = Router()
 const BASE_URL = config.apiBaseUrl
 
 /**
- * Create a new placee
+ * Create a new place
  */
 router.post('/create-place', (req, res) => {
     const {
@@ -35,6 +35,28 @@ router.post('/get-places', (req, res) => {
     axios
         .get(`${BASE_URL}/places`)
         .then(resp => res.json(resp.data))
+})
+
+/**
+ * Search places
+ */
+
+ router.post('/search-places', (req, res) => {
+    const searchTerm = req.body.query.term
+    const searchAttribute = req.body.query.attribute
+
+    const data = {
+        [searchAttribute]: searchTerm
+    }
+
+    axios
+        .get(`${BASE_URL}/places/search`, {
+            data
+        })
+        .then(resp => {
+            console.log(resp.data)
+            res.json(resp.data)
+        })
 })
 
 export default router

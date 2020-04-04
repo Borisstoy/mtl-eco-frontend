@@ -18,9 +18,13 @@ export const actions = {
     async getPlaces ({ commit }) {
         await axios
             .post('/api/get-places')
-            .then((res) => {
-                commit('setPlaces', res.data)
-            })
+            .then((res) => commit('setPlaces', res.data))
+    },
+
+    async searchPlaces ({ commit }, query: Object) {
+        axios
+            .post('/api/search-places', query)
+            .then(res => commit('setPlaces', res.data))
     }
 }
 
