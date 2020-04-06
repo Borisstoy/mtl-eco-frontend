@@ -1,6 +1,6 @@
 <template lang="pug">
-    div
-        v-btn.filter-btn.mr-2(
+    .layout
+        .filter-btn.mr-1.mb-1(
             v-if="attribute.kind === 'all'"
             depressed
             :loading="loading"
@@ -8,7 +8,7 @@
             :class="{ active: isActive }"
         ) {{ cta }}
 
-        v-btn.filter-btn.mr-2(
+        .filter-btn.mr-1.mb-1(
             v-else
             depressed
             :loading="loading"
@@ -40,9 +40,20 @@ export default class PlacesFiltersButton extends Vue {
 
 <style lang="sass" scoped>
 .filter-btn
-    background: $light-grey
+    font-size: 12px
+    padding: 4px 6px!important
+    border: 2px solid lighten($grey, 5%)
+    border-radius: 6px
+    transition: .1s
+    cursor: pointer
+    font-weight: 700
+    width: 100%
+    text-align: center
+    &:hover
+        background: lighten($secondary, 50%)
 
 .active
-    background: $secondary !important
-    color: $white
+    background: lighten($secondary, 50%) !important
+    color: $secondary
+    border: 2px solid $secondary
 </style>

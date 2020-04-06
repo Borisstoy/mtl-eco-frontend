@@ -5,7 +5,7 @@
             cta='All'
         )
 
-        .layout(v-for="kind in placesKinds")
+        .layout.wrap(v-for="kind in placesKinds")
             placesFiltersButton(
                 :attribute="kind"
                 term='cafe'
