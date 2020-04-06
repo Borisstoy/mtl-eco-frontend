@@ -40,23 +40,19 @@ router.post('/get-places', (req, res) => {
 /**
  * Search places
  */
-
  router.post('/search-places', (req, res) => {
-    const searchTerm = req.body.query.term
+    const searchTerms = req.body.query.terms
     const searchAttribute = req.body.query.attribute
 
     const data = {
-        [searchAttribute]: searchTerm
+        [searchAttribute]: searchTerms
     }
 
     axios
         .get(`${BASE_URL}/places/search`, {
             data
         })
-        .then(resp => {
-            console.log(resp.data)
-            res.json(resp.data)
-        })
+        .then(resp => res.json(resp.data))
 })
 
 export default router

@@ -1,3 +1,15 @@
+export const state = () => ({
+    loading: false
+})
+
+export const getters = {
+    loading: state => state.loading
+}
+
+export const mutations = {
+    toggleLoading: (state, loading) => state.loading = loading
+}
+
 export const actions = {
     nuxtServerInit ({ commit }, { req }) {
         let token = ''

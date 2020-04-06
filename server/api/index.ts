@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import authenticate from './authenticate'
 import places from './places'
+import resources from './resources'
 
 dotenv.config()
 
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: true }))
 */
 app.use(authenticate)
 app.use(places)
+app.use(resources)
 
 /**
 * Export the server middleware

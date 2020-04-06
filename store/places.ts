@@ -9,9 +9,7 @@ export const getters = {
 }
 
 export const mutations = {
-    setPlaces: (state, places) => {
-        state.places = places
-    }
+    setPlaces: (state, places) => state.places = places
 }
 
 export const actions = {
@@ -19,12 +17,6 @@ export const actions = {
         await axios
             .post('/api/get-places')
             .then((res) => commit('setPlaces', res.data))
-    },
-
-    async searchPlaces ({ commit }, query: Object) {
-        axios
-            .post('/api/search-places', query)
-            .then(res => commit('setPlaces', res.data))
     }
 }
 

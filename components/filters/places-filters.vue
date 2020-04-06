@@ -1,24 +1,49 @@
 <template lang="pug">
-    div
-        v-btn(
-            color="primary"
-            depressed
-            @click="searchPlaces({ query: { attribute, term }})"
-        ) {{ cta }}
+    .layout.wrap
+        placesFiltersButton(
+            attribute='all',
+            cta='All'
+        )
+
+        .layout(v-for="kind in placesKinds")
+            placesFiltersButton(
+                :attribute="kind"
+                term='cafe'
+                :cta="kind"
+            )
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import { Action } from 'vuex-class'
-import axios from 'axios'
+import { Component, Vue, Prop, Watch } from 'nuxt-property-decorator'
+import { Action, Getter, Mutation } from 'vuex-class'
+import placesFiltersButton from "~/components/buttons/places-filters-button.vue"
 
-@Component
+@Component({
+    components: {
+        placesFiltersButton
+    }
+})
 export default class PlacesFilters extends Vue {
-    @Prop({ type: String}) attribute
-    @Prop({ type: String}) term
-    @Prop({ type: String}) cta
+    @Action('resources/getPlaceskinds') getPlacesKinds: () => Promise<{}>
+    @Action('search/searchPlaces') searchPlaces: (query: Object) => Promise<{}>
+    @Getter('resources/placesKinds') placesKinds
+    @Getter('search/placesSearchTerms') placesSearchTerms: string
 
-    @Action('places/searchPlaces') searchPlaces: (query: Object) => Promise<{}>
+    @Watch('placesSearchTerms')
+    watchPlacesSearchTerms(terms) {
+        this.searchPlaces({ query: { attribute: 'kind', terms }})
+    }
+
+    created () {
+        this.getPlacesKinds()
+    }
+
+    addSearchQueryParameters () {
+        if (!Object.keys(this.$route.query).length) {
+        } else {
+            // console.log(this.$route.query)
+        }
+    }
 }
 </script>
 
